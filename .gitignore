@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+*.db
+vectors/
+node_modules/
+uploads/
+
+# Frontend env files (Vite/Next.js use .env.local, .env.production, ...)
+.env.*
+!.env.example
+
+# SQLite side files created in WAL mode (*.db doesn't match these)
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Frontend build output
+.next/
+
+# OS junk
+.DS_Store
+Thumbs.db
